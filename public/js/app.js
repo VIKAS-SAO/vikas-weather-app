@@ -1,5 +1,4 @@
-console.log('the javascript embadded to the html file is runnning')
-
+ 
 const weatherform =document.querySelector('form')
 const input =document.querySelector('input')
 const message1=document.querySelector('#message-1')

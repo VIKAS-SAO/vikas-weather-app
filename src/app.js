@@ -19,8 +19,8 @@ hbs.registerPartials(partialsPath)
 
  app.get('',function(request,response){
       response.render('index',{
-          title:'weather',
-          name:'vikas sao'
+        title:'Weather',
+        name:'Vikas Sao'
 
       })
 
@@ -28,9 +28,9 @@ hbs.registerPartials(partialsPath)
 
  app.get('/help',function(request,response){
     response.render('help',{
-        helpText:'this is the help section',
-        title:'weather',
-          name:'vikas sao'
+        helpText:'This is the Help Section',
+        title:'Weather',
+        name:'Vikas Sao'
  
     })
 
@@ -39,8 +39,8 @@ hbs.registerPartials(partialsPath)
 
 app.get('/about',function(request,response){
     response.render('about',{
-        title:'weather',
-        name:'vikas sao'
+        title:'Weather',
+        name:'Vikas Sao'
 
     })
 })
@@ -49,7 +49,7 @@ app.get('/about',function(request,response){
 
 app.get('/weather',function(request,response){
     if(!request.query.address){
-       return response.send({error:'entera city name '})
+       return response.send({error:'Enter a City Name '})
     }
 
     
@@ -92,7 +92,7 @@ app.get('/weather',function(request,response){
 app.get('*', (request, response) => {
     response.render('404', {
         title: '404',
-        name: 'vikas sao',
+        name: 'Vikas Sao',
         errorMessage: 'Help article not found.'
     })
 })
