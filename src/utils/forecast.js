@@ -12,7 +12,7 @@ function forecast(latitude,longitude,callback) {
             callback('oops ! no cities found ',undefined)
         }
         else{
-            callback(undefined,body.current.weather_descriptions[0]+  '  the temperature is :  '+body.current.temperature+'  *C ' )
+            callback(undefined, '  the temperature is :  '+body.current.temperature+'  *C ' )
              
         }
      })
